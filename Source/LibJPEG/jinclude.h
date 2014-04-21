@@ -44,7 +44,10 @@
 #endif
 
 #include <stdio.h>
+
+#ifndef WIN32
 #include <unistd.h>
+#endif
 
 /*
  * We need memory copying and zeroing functions, plus strncpy().

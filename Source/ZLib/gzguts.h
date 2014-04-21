@@ -19,7 +19,11 @@
 #endif
 
 #include <stdio.h>
+
+#ifndef WIN32
 #include <unistd.h>
+#endif
+
 #include "zlib.h"
 #ifdef STDC
 #  include <string.h>
