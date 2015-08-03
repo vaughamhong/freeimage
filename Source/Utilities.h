@@ -263,7 +263,7 @@ CalculateLine(unsigned width, unsigned bitdepth) {
 
 inline unsigned
 CalculatePitch(unsigned line) {
-	return line + 3 & ~3;
+	return (line + (3 & ~3));
 }
 
 inline unsigned
